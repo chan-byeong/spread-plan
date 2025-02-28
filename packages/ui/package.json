@@ -2,10 +2,12 @@
   "name": "@spread_plan/ui",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsup",
+    "build": "tsup && tailwindcss -i src/style.css -o dist/style.css --minify",
     "dev": "tsup --watch"
   },
   "keywords": [],
@@ -23,6 +25,10 @@
     "typescript": "~5.7.2"
   },
   "dependencies": {
+    "@tailwindcss/cli": "^4.0.9",
     "@tailwindcss/postcss": "^4.0.9"
+  },
+  "exports": {
+    "./style.css": "./dist/style.css"
   }
 }
