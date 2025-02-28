@@ -1,6 +1,7 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
+
 import { Card } from "@spread_plan/ui";
 import "./App.css";
 
@@ -10,7 +11,7 @@ function App() {
   return (
     <>
       <div>
-        <Card>dasf</Card>
+        <Card className='text-3xl'>dasf</Card>
         <a href='https://vite.dev' target='_blank'>
           <img src={viteLogo} className='logo' alt='Vite logo' />
         </a>
