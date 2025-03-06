@@ -1,2 +1,3 @@
-# Spread_Plan
-Spread your plan
+# tailwind v4 configuration
+
+tailwind v4 configuration at monorepository
