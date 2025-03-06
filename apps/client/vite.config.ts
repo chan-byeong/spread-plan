@@ -15,4 +15,7 @@ export default defineConfig({
     include: ["react", "react-dom"],
     exclude: ["@spread_plan/ui"],
   },
+  build: {
+    outDir: "build",
+  },
 });
