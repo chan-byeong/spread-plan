@@ -1,1 +1,149 @@
 @import "tailwindcss";
+@reference "tailwindcss/theme.css";
+
+@theme {
+  /* #1 Primitive */
+  --natural-900: #282b2d;
+  --natural-800: #373737;
+  --natural-700: #565656;
+  --natural-600: #6b6b6b;
+  --natural-500: #909090;
+  --natural-400: #030202;
+  --natural-300: #d6d6d6;
+  --natural-200: #e6e6e6;
+  --natural-100: #f0f0f0;
+  --natural-50: #f8f8f8;
+
+  /* Primary */
+  --primary-900: #294a8d;
+  --primary-800: #2e60c4;
+  --primary-700: #3a7ae4;
+  --primary-600: #508df0;
+  --primary-500: #379bff;
+  --primary-400: #4a9aff;
+  --primary-300: #88b0ff;
+  --primary-200: #a4daff;
+  --primary-100: #bcdaff;
+  --primary-50: #e4f3ff;
+
+  /* Alert */
+  --alert-red: #e84c2d;
+  --alert-yellow: #f1c30f;
+  --alert-blue: #27bfff;
+
+  /* Basic */
+  --basic-black: #000000;
+  --basic-white: #ffffff;
+
+  /* YR */
+  --yr-500: #f77001;
+  --yr-300: #f98e8d;
+  --yr-50: #ffefe2;
+
+  /* Y */
+  --y-500: #ffaf0d;
+  --y-300: #ff50bd;
+  --y-50: #fff5e2;
+
+  /* GY */
+  --gy-500: #a4d2a7;
+  --gy-300: #daef98;
+  --gy-50: #eefbe5;
+
+  /* G */
+  --g-500: #379bff;
+  --g-300: #88b0ff;
+  --g-50: #e2f7fa;
+
+  /* B */
+  --b-500: #379bff;
+  --b-300: #88d2ff;
+  --b-50: #e2f4ff;
+
+  /* PB */
+  --pb-500: #704dff;
+  --pb-300: #8b02ff;
+  --pb-50: #e5dfff;
+
+  /* Variable Collections - Light Mode */
+
+  /* Surface */
+  --color-surface-standard-bg-1: var(--basic-white);
+  --color-surface-standard-bg-2: var(--natural-50);
+  --color-surface-standard-container: var(--basic-white);
+  --color-surface-standard-container-50: var(--natural-50);
+  --color-surface-brand: var(--basic-white);
+  --color-surface-brand-sub: var(--natural-800);
+  --color-surface-env: var(--basic-white);
+
+  /* Container */
+  --color-container: var(--basic-white);
+  --color-container-50: var(--natural-50);
+
+  /* TextIcon/OnStandard */
+  --color-texticon-onstandard-highemphasis: var(--natural-900);
+  --color-texticon-onstandard-midemphasis: var(--natural-800);
+  --color-texticon-onstandard-lowemphasis: var(--natural-400);
+  --color-texticon-onstandard-primary: var(--primary-500);
+  --color-texticon-onstandard-accent: var(--alert-red);
+  --color-texticon-onstandard-pending: var(--alert-yellow);
+  --color-texticon-onstandard-invert: var(--basic-white);
+
+  /* TextIcon/OnBrand */
+  --color-texticon-onbrand-primary: var(--basic-white);
+
+  /* Task/Point */
+  --color-task-point-yr-500: var(--yr-500);
+  --color-task-point-y-500: var(--y-500);
+  --color-task-point-gy-500: var(--gy-500);
+  --color-task-point-b-500: var(--b-500);
+  --color-task-point-pb-500: var(--pb-500);
+
+  /* Task/BG */
+  --color-task-bg-yr-50: var(--yr-50);
+  --color-task-bg-y-50: var(--y-50);
+  --color-task-bg-gy-50: var(--gy-50);
+  --color-task-bg-b-50: var(--b-50);
+  --color-task-bg-pb-50: var(--pb-50);
+
+  /* Border/Standard */
+  --color-border-standard-highemphasis: var(--natural-400);
+  --color-border-standard-midemphasis: var(--natural-100);
+  --color-border-standard-lowemphasis: var(--natural-50);
+
+  /* Border/Brand */
+  --color-border-brand-primary: var(--primary-500);
+
+  /* Border/Env */
+  --color-border-env-accent: var(--alert-red);
+
+  /* Status */
+  --color-status-success: var(--alert-blue);
+  --color-status-accent: var(--alert-red);
+  --color-status-pending: var(--alert-yellow);
+  --color-status-disabled: var(--natural-400);
+}
+
+@utility text-caption-600 {
+  @apply text-xs font-semibold;
+}
+
+@utility text-caption-400 {
+  @apply text-xs font-normal;
+}
+
+@utility text-body-md-600 {
+  @apply text-[16px] font-semibold;
+}
+
+@utility text-body-md-400 {
+  @apply text-[16px] font-normal;
+}
+
+@utility text-body-sm-600 {
+  @apply text-[14px] font-semibold;
+}
+
+@utility text-body-sm-400 {
+  @apply text-[14px] font-normal;
+}
