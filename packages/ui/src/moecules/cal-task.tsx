@@ -19,7 +19,7 @@ export const CalTask = ({ color, children, bg }: CalTaskProps) => {
   const bgColor = bg ?? "default";
   return (
     <div
-      className={`flex items-center px-2 gap-2 h-6 w-[156px] ${bgMap[bgColor]}`}
+      className={`flex items-center px-2 gap-2 h-5 w-[156px] ${bgMap[bgColor]}`}
     >
       <TaskDot color={color} />
       <TaskText>{children}</TaskText>
